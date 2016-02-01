@@ -1,6 +1,9 @@
+let divBy = (year, num) => {
+  return year % num === 0; 
+};
+
 let isLeapYear = (year) => {
-  if (year % 4 === 0) return (year % 100 !== 0) || (year % 400 === 0);
-  return false;
+  return divBy(year, 4) && (!divBy(year, 100) || divBy(year, 400));
 };
 
 export default isLeapYear;

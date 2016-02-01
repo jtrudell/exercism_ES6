@@ -3,9 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var divBy = function divBy(year, num) {
+  return year % num === 0;
+};
+
 var isLeapYear = function isLeapYear(year) {
-  if (year % 4 === 0) return year % 100 !== 0 || year % 400 === 0;
-  return false;
+  return divBy(year, 4) && (!divBy(year, 100) || divBy(year, 400));
 };
 
 exports["default"] = isLeapYear;
