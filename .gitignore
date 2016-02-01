@@ -1,0 +1,5 @@
+*/babel-output/
+*/node_modules/
+*.json
+gulpfile.js
+README.md
