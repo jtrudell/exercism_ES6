@@ -3,3 +3,4 @@
 *.json
 gulpfile.js
 README.md
+yarn.lock
