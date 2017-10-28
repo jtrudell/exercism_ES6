@@ -5,8 +5,8 @@ class Pangram {
 
   isPangram() {
     if (this.str.length < 26) {
-      return false
-    };
+      return false;
+    }
 
     for (let cp = 97; cp <= 122; cp++) {
       if (this.str.indexOf(String.fromCharCode(cp)) === -1) {
